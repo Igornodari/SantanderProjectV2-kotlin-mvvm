@@ -11,10 +11,9 @@ interface GetCredentials {
 
     @POST("login")
     @FormUrlEncoded
-
     fun verifyLogin(
-        @Field("user") login: String,
-        @Field("password") password: String
+            @Field("user") login: String,
+            @Field("password") password: String
     ): Call<LoginResponse>
 
     @GET

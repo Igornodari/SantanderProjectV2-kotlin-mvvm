@@ -16,6 +16,7 @@ import kotlinx.android.synthetic.main.form_item.view.*
 
 class FormAdapter(private val notes: List<AccountInfoData>, private val context: Context) :
     Adapter<FormAdapter.ViewHolder>() {
+
     private lateinit var model: LoginValidate
 
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ViewHolder {
@@ -45,5 +46,7 @@ class FormAdapter(private val notes: List<AccountInfoData>, private val context:
         val desc = itemView.tv_desc!!
         val date = itemView.tv_data!!
         val value = itemView.tv_valorconta!!
+
     }
+
 }

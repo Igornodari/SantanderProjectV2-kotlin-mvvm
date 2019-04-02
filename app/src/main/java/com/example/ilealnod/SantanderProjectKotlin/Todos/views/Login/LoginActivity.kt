@@ -102,7 +102,7 @@ open class LoginActivity : AppCompatActivity(), LoginCallback {
 
     //Função que vai para pagina de formulario passando os objetos convertidos em Json
     fun nextPage(context: Context) {
-        progress_circular.visibility = View.GONE
+        onFailure()
         val intent = Intent(context, FormActivity::class.java)
         loginViewModel!!.converterGforJ(gson, intent)
         startActivity(intent)

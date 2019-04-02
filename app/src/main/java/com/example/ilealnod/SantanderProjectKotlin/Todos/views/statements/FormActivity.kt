@@ -24,7 +24,6 @@ class FormActivity : AppCompatActivity() {
         clientData = ClientData()
         loginModel = LoginModel()
         formModel = FormModel()
-
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
